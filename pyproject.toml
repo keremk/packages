@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "packages"
+version = "0.1.0"
+description = "A service that provides a continuous stream of package info"
+authors = ["Kerem Karatal <kkaratal@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.109.2"
+pydantic = "^2.6.1"
+uvicorn-http2 = "^0.0.0"
+uvicorn = "^0.27.1"
+prometheus-client = "^0.20.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

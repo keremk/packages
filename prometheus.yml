@@ -1,0 +1,9 @@
+global:
+  scrape_interval: 2s # By default, scrape targets every 15 seconds.
+
+scrape_configs:
+  - job_name: 'packages'
+    # Your web service needs to expose metrics on `/metrics` endpoint.
+    static_configs:
+      - targets: ['host.docker.internal:8000']
+
